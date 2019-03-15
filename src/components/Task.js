@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import TableDefault from "./TableDefault";
+import CardDefault from "./CardDefault";
 import Form from "./Form";
 import { Card, Typography, CardContent } from "@material-ui/core";
 
@@ -25,14 +26,20 @@ class Task extends Component {
   renderTable = () => {
     if (this.state.tasks.length > 0) {
       return (
-        <TableDefault
+        // <TableDefault
+        //   tasksData={this.state.tasks}
+        //   removeTask={this.removeTask}
+        // />
+        <CardDefault
           tasksData={this.state.tasks}
           removeTask={this.removeTask}
         />
       );
     } else
       return (
-        <div className="flex-content__center text-color">Você não tem nenhuma tarefa!</div>
+        <div className="flex-content__center text-color">
+          Você não tem nenhuma tarefa!
+        </div>
       );
   };
 

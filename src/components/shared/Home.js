@@ -164,8 +164,6 @@ class MiniDrawer extends React.Component {
           <div className={classes.toolbar} />
           {/* content */}
           <Task/>
-         
-
         </main>
       </div>
     );
